@@ -2,6 +2,8 @@
 
 Crea un formulario para enviar tu presentación en el curso Full Stack. Puedes usar este [otro](https://pastebin.com/fMvQw4Nb) de base. Mira también la Web de W3School como referencia.
 
+<img src="https://oscarm.tinytake.com/media/11dd0a8?filename=1641290468877_TinyTake04-01-2022-10-54-45_637768868887526834_637768872678503754.png&sub_type=thumbnail_preview&type=attachment&width=1198&height=615" title="Powered by TinyTake Screen Capture"/><br>
+
 ## Campos que debe tener el formulario
 
 - Nombre. Como mucho tiene 50 carácteres de largo. Campo requerido.
