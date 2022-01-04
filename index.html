@@ -6,18 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        div {
+            margin-top: 1rem;
+        }
+
+        .submit {
+            margin: 2rem;
+            color: white;
+            background-color: rgb(52, 133, 165);
+            text-align: center;
+            height: 3rem;
+           
+        }
+
+        .cuadro-tres-cosas{
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+
+
+        }
+
+        #objetivos-del-curso {
+
+            width: 25rem;
+            height: 5rem;
+        }
+
+        input:hover{
+            background-color: rgb(23, 230, 178);
+        }
+
+        input:active{
+            background-color: blue;
+        }
+
+        input:invalid{
+            border: red solid 2px;
+        }
+
+
+    </style>
+
     <title>Formulario básico HTML5</title>
 </head>
 
 <body>
-    <form method="" action="">
+    <form method="post" action="https://vigo-rocks.free.beeceptor.com">
+        <div>
+            <fieldset>
+                <label for="nombre">Nombre: </label></br>
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" maxlength="50" required>
+            </fieldset>
+        </div>
 
-        <fieldset>
-            <label for="nombre">Nombre: </label>
-            <input type="text" required placeholder="Nombre" name="nombre" id="nombre" required>
-        </fieldset>
+        <div>
+            <fieldset>
+                <label for="edad">Edad:</label></br>
+                <input type="number" placeholder="18" name="edad" id="edad" min="18" max="99" required>
+            </fieldset>
+
+
+        </div>
+
+        <div>
+            <fieldset>
+                <label for="ciudad-de-origen">Ciudad de origen: </label></br>
+                <input type="text" placeholder="Vigo" name="ciudad-de-origen" id="ciudad-de-origen" maxlength="100"
+                    required>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <label for="medio-transporte">¿ Cómo vienes al curso?:</label></br>
+                <select name="medio-transporte" id="medio-transporte" value="A pie" required>
+
+                    <option value="A pie">A pie</option>
+                    <option value="Transporte público">Transporte público</option>
+                    <option value="Transporte privado">Transporte privado</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <label for="objetivos-del-curso">¿ Cúales son tus objetivos para este curso?:</label></br>
+                <input name="objetivos-del-curso" id="objetivos-del-curso" maxlength="1024" >
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset class="cuadro-tres-cosas">
+                <legend> Cuéntanos tres cosas sobre tí</legend>
+                <div>
+                    <label for="cosa1-verdadera">Cuéntanos algo que sea verdadero: </label></br>
+                    <input type="text" name="cosa1-verdadera" id="cosa1-verdadera" maxlength="1024">
+                </div>
+
+
+                <div>
+                    <label for="cosa2-verdadera">Cuéntanos alguna otra cosa que sea verdadera: </label></br>
+                    <input type="text" name="cosa2-verdadera" id="cosa2-verdadera" maxlength="1024">
+                </div>
+
+                <div>
+                    <label for="cosa-falsa">Cuéntanos algo que sobre tí que sea falso: </label></br>
+                    <input type="text" name="cosa-falsa" id="cosa-falsa" maxlength="1024">
+                </div>
+
+
+        </div>
+
+        <div>
+            <fieldset>
+                <label for="usuario-discord">Introduce tu usuario de Discord: </label></br>
+                <input name="usuario-discord" id="usuario-discord" pattern="@*" required>
+            </fieldset>
+
+        </div>
 
         <input type="submit" class="submit" id="submit" value="Enviar" />
+       
 
     </form>
 </body>
